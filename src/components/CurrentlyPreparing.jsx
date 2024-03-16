@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import PrepareItem from "./PrepareItem";
 
-const CurrentlyPreparing = ({ prepareItems }) => {
+const CurrentlyPreparing = ({ prepareItems, handlePrepare }) => {
   return (
     <div className="flex flex-col text-center">
       <h4 className=" text-2xl font-bold text-sky-900">
@@ -29,6 +29,7 @@ const CurrentlyPreparing = ({ prepareItems }) => {
                 prepareItem={prepareItem}
                 key={prepareItem.recipe_id}
                 index={index}
+                handlePrepare={handlePrepare}
               ></PrepareItem>
             ))}
           </tbody>
@@ -40,6 +41,7 @@ const CurrentlyPreparing = ({ prepareItems }) => {
 
 CurrentlyPreparing.propTypes = {
   prepareItems: PropTypes.array.isRequired,
+  handlePrepare: PropTypes.func.isRequired,
 };
 
 export default CurrentlyPreparing;

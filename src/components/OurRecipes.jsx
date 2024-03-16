@@ -22,6 +22,13 @@ const OurRecipes = () => {
     else return toast.error("Already Added");
   };
 
+  const handleRemovefromPrepareItems = (recipe) => {
+    const afterRemoved = prepareItems.filter(
+      (prepareItem) => prepareItem.recipe_id !== recipe.recipe_id,
+    );
+    setPrepareItems(afterRemoved);
+  };
+
   return (
     <main>
       <div className="mx-auto max-w-8xl px-4">
@@ -44,7 +51,10 @@ const OurRecipes = () => {
                 ></RecipeItem>
               ))}
             </div>
-            <CookingCart prepareItems={prepareItems}></CookingCart>
+            <CookingCart
+              prepareItems={prepareItems}
+              handleRemovefromPrepareItems={handleRemovefromPrepareItems}
+            ></CookingCart>
           </div>
         </div>
       </div>
