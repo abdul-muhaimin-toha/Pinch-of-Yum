@@ -1,10 +1,10 @@
-import Prepare from "./Prepare";
+import PrepareItem from "./PrepareItem";
 
-const Prepares = () => {
+const CurrentlyPreparing = () => {
   return (
     <div className="flex flex-col text-center">
       <h4 className=" text-2xl font-bold text-sky-900">Want to Cook: 01</h4>
-      <div className="mt-10 overflow-x-auto">
+      <div className="mt-8 overflow-x-auto">
         <table className="table">
           <thead className=" text-sky-900">
             <tr>
@@ -16,9 +16,9 @@ const Prepares = () => {
             </tr>
           </thead>
           <tbody>
-            <Prepare></Prepare>
-            <Prepare></Prepare>
-            <Prepare></Prepare>
+            <PrepareItem></PrepareItem>
+            <PrepareItem></PrepareItem>
+            <PrepareItem></PrepareItem>
           </tbody>
         </table>
       </div>
@@ -26,4 +26,4 @@ const Prepares = () => {
   );
 };
 
-export default Prepares;
+export default CurrentlyPreparing;

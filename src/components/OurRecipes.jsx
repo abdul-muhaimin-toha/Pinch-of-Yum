@@ -5,7 +5,7 @@ const OurRecipes = () => {
   return (
     <main>
       <div className="mx-auto max-w-8xl px-4">
-        <div className="flex flex-col">
+        <div className="mb-24 flex flex-col">
           <div className="flex max-w-3xl flex-col items-center justify-center gap-6 self-center pb-12 text-center">
             <h3 className="text-4xl font-semibold text-sky-900">Our Recipes</h3>
             <p className="text-slate-500">

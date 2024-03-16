@@ -1,4 +1,4 @@
-const Prepare = () => {
+const PrepareItem = () => {
   return (
     <tr>
       <th>1</th>
@@ -6,7 +6,7 @@ const Prepare = () => {
       <td>30 Minutes</td>
       <td>300 Calories</td>
       <td>
-        <button className="rounded-md bg-sky-800 p-3 px-4 font-semibold text-white duration-200 hover:bg-sky-900">
+        <button className="rounded-md bg-sky-800 p-3  font-semibold text-white duration-200 hover:bg-sky-900">
           Prepare
         </button>
       </td>
@@ -14,4 +14,4 @@ const Prepare = () => {
   );
 };
 
-export default Prepare;
+export default PrepareItem;
