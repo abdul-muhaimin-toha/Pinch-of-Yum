@@ -1,7 +1,16 @@
+import { useEffect, useState } from "react";
 import CookingCart from "./CookingCart";
 import RecipeItem from "./RecipeItem";
 
 const OurRecipes = () => {
+  const [recipes, setRecipes] = useState([]);
+
+  useEffect(() => {
+    fetch("/recipes.json")
+      .then((response) => response.json())
+      .then((data) => setRecipes(data));
+  }, []);
+
   return (
     <main>
       <div className="mx-auto max-w-8xl px-4">
