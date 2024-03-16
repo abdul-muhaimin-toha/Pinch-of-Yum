@@ -1,10 +1,13 @@
-const PrepareItem = () => {
+import PropTypes from "prop-types";
+
+const PrepareItem = ({ prepareItem, index }) => {
+  const { recipe_name, preparing_time, calories } = prepareItem;
   return (
     <tr>
-      <th>1</th>
-      <td>Chicken Caesar Salad</td>
-      <td>30 Minutes</td>
-      <td>300 Calories</td>
+      <th>{index + 1}</th>
+      <td>{recipe_name}</td>
+      <td>{preparing_time} Minutes</td>
+      <td> {calories} Calories</td>
       <td>
         <button className="rounded-md bg-sky-800 p-3  font-semibold text-white duration-200 hover:bg-sky-900">
           Prepare
@@ -12,6 +15,11 @@ const PrepareItem = () => {
       </td>
     </tr>
   );
+};
+
+PrepareItem.propTypes = {
+  prepareItem: PropTypes.object.isRequired,
+  index: PropTypes.number.isRequired,
 };
 
 export default PrepareItem;

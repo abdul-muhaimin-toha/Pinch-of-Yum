@@ -4,12 +4,20 @@ import RecipeItem from "./RecipeItem";
 
 const OurRecipes = () => {
   const [recipes, setRecipes] = useState([]);
+  const [prepareItems, setPrepareItems] = useState([]);
 
   useEffect(() => {
     fetch("/recipes.json")
       .then((response) => response.json())
       .then((data) => setRecipes(data));
   }, []);
+
+  const handleWantToCook = (recipe) => {
+    const isalreadyAdded = prepareItems.find(
+      (item) => item.recipe_id === recipe.recipe_id,
+    );
+    if (!isalreadyAdded) setPrepareItems([...prepareItems, recipe]);
+  };
 
   return (
     <main>
@@ -25,13 +33,15 @@ const OurRecipes = () => {
           </div>
           <div className="flex gap-6 ">
             <div className="grid w-7/12 grid-cols-2 gap-6">
-              <RecipeItem></RecipeItem>
-              <RecipeItem></RecipeItem>
-              <RecipeItem></RecipeItem>
-              <RecipeItem></RecipeItem>
-              <RecipeItem></RecipeItem>
+              {recipes.map((recipe) => (
+                <RecipeItem
+                  recipe={recipe}
+                  handleWantToCook={handleWantToCook}
+                  key={recipe.recipe_id}
+                ></RecipeItem>
+              ))}
             </div>
-            <CookingCart></CookingCart>
+            <CookingCart prepareItems={prepareItems}></CookingCart>
           </div>
         </div>
       </div>
