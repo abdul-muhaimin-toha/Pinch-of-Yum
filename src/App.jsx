@@ -1,11 +1,15 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import OurRecipes from "./components/OurRecipes";
 
 function App() {
   return (
     <>
-      <Navbar></Navbar>
-      <Hero></Hero>
+      <header>
+        <Navbar></Navbar>
+        <Hero></Hero>
+      </header>
+      <OurRecipes></OurRecipes>
     </>
   );
 }

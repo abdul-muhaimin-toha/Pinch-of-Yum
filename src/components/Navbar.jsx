@@ -9,7 +9,7 @@ const Navbar = () => {
           <div>
             <a href="#">
               <img
-                src="./pinch-of-yum-logo.png"
+                src="/pinch-of-yum-logo.png"
                 alt="Pinch of yum logo"
                 className="w-60"
               />

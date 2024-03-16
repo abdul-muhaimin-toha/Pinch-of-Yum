@@ -5,7 +5,7 @@ const Hero = () => {
         <div
           className="hero mb-24 rounded-3xl"
           style={{
-            backgroundImage: "url(./hero-background.jpg)",
+            backgroundImage: "url(/hero-background.jpg)",
           }}
         >
           <div className="hero-overlay rounded-3xl bg-opacity-70 py-72"></div>
