@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import CookingCart from "./CookingCart";
 import RecipeItem from "./RecipeItem";
 
@@ -17,6 +19,7 @@ const OurRecipes = () => {
       (item) => item.recipe_id === recipe.recipe_id,
     );
     if (!isalreadyAdded) setPrepareItems([...prepareItems, recipe]);
+    else return toast.error("Already Added");
   };
 
   return (

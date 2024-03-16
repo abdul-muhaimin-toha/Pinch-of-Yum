@@ -1,5 +1,5 @@
-import PrepareItem from "./PrepareItem";
 import PropTypes from "prop-types";
+import PrepareItem from "./PrepareItem";
 
 const CurrentlyPreparing = ({ prepareItems }) => {
   return (

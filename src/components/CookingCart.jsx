@@ -1,6 +1,6 @@
+import PropTypes from "prop-types";
 import CurrentlyCooking from "./CurrentlyCooking";
 import CurrentlyPreparing from "./CurrentlyPreparing";
-import PropTypes from "prop-types";
 
 const CookingCart = ({ prepareItems }) => {
   return (
