@@ -4,8 +4,8 @@ import { CgProfile } from "react-icons/cg";
 const Navbar = () => {
   return (
     <nav>
-      <div className="max-w-8xl  mx-auto  px-4 py-12">
-        <div className="flex items-center justify-between">
+      <div className="mx-auto  max-w-8xl  px-4 ">
+        <div className="flex items-center justify-between py-12">
           <div>
             <a
               href="#"
@@ -14,7 +14,7 @@ const Navbar = () => {
               Pinch of Yum
             </a>
           </div>
-          <ul className="flex items-center justify-center gap-12 text-slate-500 duration-100 hover:text-sky-900 ">
+          <ul className="flex items-center justify-center gap-8 text-slate-500 duration-100 hover:text-sky-900 ">
             <a href="#">Home</a>
             <a href="#">Recipe</a>
             <a href="#">About</a>
@@ -29,7 +29,7 @@ const Navbar = () => {
                 className="bg-transparent p-2 text-slate-500 outline-none"
               />
             </div>
-            <div className="bg rounded-full bg-sky-800 p-2 text-3xl text-white duration-100 hover:bg-sky-900">
+            <div className="bg rounded-full bg-sky-800 p-2 text-3xl text-white duration-200 hover:bg-sky-900">
               <button className="flex items-center justify-center">
                 <CgProfile />
               </button>
