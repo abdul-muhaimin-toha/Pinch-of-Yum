@@ -7,11 +7,12 @@ const Navbar = () => {
       <div className="mx-auto  max-w-8xl  px-4 ">
         <div className="flex items-center justify-between py-12">
           <div>
-            <a
-              href="#"
-              className="text-3xl font-bold text-sky-800 duration-100 hover:text-sky-900"
-            >
-              Pinch of Yum
+            <a href="#">
+              <img
+                src="./pinch-of-yum-logo.png"
+                alt="Pinch of yum logo"
+                className="w-60"
+              />
             </a>
           </div>
           <ul className="flex items-center justify-center gap-8 text-slate-500 duration-100 hover:text-sky-900 ">
