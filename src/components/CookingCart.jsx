@@ -2,6 +2,7 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import CurrentlyCooking from "./CurrentlyCooking";
 import CurrentlyPreparing from "./CurrentlyPreparing";
+import { toast } from "react-toastify";
 
 const CookingCart = ({ prepareItems, handleRemovefromPrepareItems }) => {
   const [cookingItems, setCookingItems] = useState([]);
@@ -13,6 +14,8 @@ const CookingCart = ({ prepareItems, handleRemovefromPrepareItems }) => {
     if (!isAlredyAdded) {
       setCookingItems([...cookingItems, recipe]);
       handleRemovefromPrepareItems(recipe);
+    } else {
+      return toast.error("Already added in cooking");
     }
   };
   return (
