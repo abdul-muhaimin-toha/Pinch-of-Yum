@@ -36,9 +36,10 @@ const OurRecipes = () => {
           <div className="flex max-w-3xl flex-col items-center justify-center gap-6 self-center pb-12 text-center">
             <h3 className="text-4xl font-semibold text-sky-900">Our Recipes</h3>
             <p className="text-slate-500">
-              Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus
-              vulputate netus pharetra rhoncus. Eget urna volutpat curabitur
-              elementum mauris aenean neque.
+              Embark on a flavorful journey with Pinch of Yum, where each recipe
+              is a culinary masterpiece waiting to be discovered. Join our
+              community and savor the taste of homemade delights from around the
+              world.
             </p>
           </div>
           <div className="flex gap-6 ">
