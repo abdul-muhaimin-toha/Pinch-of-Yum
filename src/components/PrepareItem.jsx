@@ -4,14 +4,14 @@ const PrepareItem = ({ prepareItem, index, handlePrepare }) => {
   const { recipe_name, preparing_time, calories } = prepareItem;
   return (
     <tr>
-      <th>{index + 1}</th>
-      <td>{recipe_name}</td>
-      <td>{preparing_time} Minutes</td>
-      <td> {calories} Calories</td>
+      <th className="hidden md:block">{index + 1}</th>
+      <td className="text-xs md:text-sm">{recipe_name}</td>
+      <td className="text-xs md:text-sm">{preparing_time} Minutes</td>
+      <td className="text-xs md:text-sm"> {calories} Calories</td>
       <td>
         <button
           onClick={() => handlePrepare(prepareItem)}
-          className="rounded-md bg-sky-800 p-3  font-semibold text-white duration-200 hover:bg-sky-900"
+          className="rounded-md bg-sky-800 p-1.5 text-xs  font-semibold text-white  duration-200 hover:bg-sky-900 md:p-3 md:text-sm"
         >
           Prepare
         </button>

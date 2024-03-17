@@ -16,11 +16,11 @@ const CurrentlyPreparing = ({ prepareItems, handlePrepare }) => {
         <table className="table min-h-28 ">
           <thead className=" text-sky-900">
             <tr>
-              <th className="text-sm font-semibold"></th>
-              <th className="text-sm font-semibold">Name</th>
-              <th className="text-sm font-semibold">Time</th>
-              <th className="text-sm font-semibold">Calories</th>
-              <th className="text-sm font-semibold"></th>
+              <th className="texy-xs hidden font-semibold md:block md:text-sm"></th>
+              <th className="texy-xs font-semibold md:text-sm">Name</th>
+              <th className="texy-xs font-semibold md:text-sm">Time</th>
+              <th className="texy-xs font-semibold md:text-sm">Calories</th>
+              <th className="texy-xs font-semibold md:text-sm"></th>
             </tr>
           </thead>
           <tbody>

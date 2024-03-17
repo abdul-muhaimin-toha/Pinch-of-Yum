@@ -31,7 +31,7 @@ const OurRecipes = () => {
 
   return (
     <main>
-      <div className="mx-auto max-w-8xl px-4">
+      <div className="mx-auto max-w-8xl px-2 md:px-4">
         <div className="mb-24 flex flex-col">
           <div className="flex max-w-3xl flex-col items-center justify-center gap-6 self-center pb-12 text-center">
             <h3 className="text-4xl font-semibold text-sky-900">Our Recipes</h3>
@@ -42,8 +42,8 @@ const OurRecipes = () => {
               world.
             </p>
           </div>
-          <div className="flex gap-6 ">
-            <div className="grid w-7/12 grid-cols-2 gap-6">
+          <div className="flex flex-col-reverse gap-6 xl:flex-row ">
+            <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 xl:w-7/12">
               {recipes.map((recipe) => (
                 <RecipeItem
                   recipe={recipe}

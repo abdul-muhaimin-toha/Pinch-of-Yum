@@ -16,10 +16,10 @@ const CurrentlyCooking = ({ cookingItems }) => {
         <table className="table">
           <thead className=" text-sky-900">
             <tr>
-              <th className="text-sm font-semibold"></th>
-              <th className="text-sm font-semibold">Name</th>
-              <th className="text-sm font-semibold">Time</th>
-              <th className="text-sm font-semibold">Calories</th>
+              <th className="hidden text-xs font-semibold md:block md:text-sm"></th>
+              <th className="text-xs font-semibold md:text-sm">Name</th>
+              <th className="text-xs font-semibold md:text-sm">Time</th>
+              <th className="text-xs font-semibold md:text-sm">Calories</th>
             </tr>
           </thead>
           <tbody>
@@ -33,16 +33,16 @@ const CurrentlyCooking = ({ cookingItems }) => {
           </tbody>
           <tfoot className=" text-sky-900">
             <tr>
-              <th className="text-sm font-semibold"></th>
-              <th className="text-sm font-semibold">Total = </th>
-              <th className="text-sm font-semibold">
+              <th className="hidden text-xs font-semibold md:block md:text-sm"></th>
+              <th className="text-xs font-semibold md:text-sm">Total = </th>
+              <th className="text-xs font-semibold md:text-sm">
                 {cookingItems.reduce(
                   (sum, current) => sum + current.preparing_time,
                   0,
                 )}{" "}
                 Minutes
               </th>
-              <th className="text-sm font-semibold">
+              <th className="text-xs font-semibold md:text-sm">
                 {" "}
                 {cookingItems.reduce(
                   (sum, current) => sum + current.calories,
