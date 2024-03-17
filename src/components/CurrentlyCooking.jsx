@@ -26,7 +26,7 @@ const CurrentlyCooking = ({ cookingItems }) => {
             {cookingItems.map((cookingItem, index) => (
               <CookingItem
                 cookingItem={cookingItem}
-                key={cookingItem.recipe_id}
+                key={index}
                 index={index}
               ></CookingItem>
             ))}
