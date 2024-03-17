@@ -6,13 +6,13 @@ const Navbar = () => {
   return (
     <nav>
       <div className="mx-auto  max-w-8xl  px-2 md:px-4 ">
-        <div className="flex items-center justify-between  py-12">
+        <div className="flex items-center justify-between  gap-2 py-8 md:py-12">
           <div>
             <a href="#">
               <img
                 src="/pinch-of-yum-logo.png"
                 alt="Pinch of yum logo"
-                className="max-w-60 lg:max-w-52"
+                className="w-40 max-w-60 lg:max-w-52"
               />
             </a>
           </div>
@@ -44,7 +44,7 @@ const Navbar = () => {
               />
 
               <div className="drawer-content flex flex-col items-center justify-center">
-                <label htmlFor="my-drawer-2" className="p-3 text-4xl lg:hidden">
+                <label htmlFor="my-drawer-2" className="p-1 text-4xl lg:hidden">
                   <IoMdMenu />
                 </label>
               </div>
